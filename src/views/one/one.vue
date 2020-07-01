@@ -15,6 +15,7 @@
         name: "one",
         data(){
             return{
+
                 activeName:'/home/one/one_first',
                 menudata:[
                     {
@@ -31,14 +32,21 @@
         watch: {
             // '$route': {
             //     handler (val) {
-            //         console.log(val,88);
-            //         this.$router.push({path: val.path})
+            //     //     // menudata.forEach(item =>{
+            //     //     //
+            //     //     // })
+            //     //     // // console.log(val,88);
+            //     //     // // this.$router.push({path: val.path})
             //         this.activeName = val.path
+            //     //     // console.log(this.activeName,9980);
+            //     //
             //     }
             // }
         },
         mounted(){
-            console.log(this.$route,998);
+            this.activeName=this.$route.path
+            // console.log(this.$route.path,876)
+            // console.log(this.$route.meta,998);
             // this.handleClick()
         },
         methods:{

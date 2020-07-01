@@ -1,14 +1,14 @@
 <template>
 <div>
 我是用户管理
-    <div id="nav">
-        <el-tabs :tab-position="tabPosition" style="height: 200px;" @tab-click="handleClick" v-model="activeName">
-            <el-tab-pane :label="item.name" :name="item.path" v-for="(item,index) in datas" :key="index"></el-tab-pane>
-        </el-tabs>
-    </div>
-   <div>
-       <router-view/>
-   </div>
+<!--    <div id="nav">-->
+<!--        <el-tabs :tab-position="tabPosition" style="height: 200px;" @tab-click="handleClick" v-model="activeName">-->
+<!--            <el-tab-pane :label="item.name" :name="item.path" v-for="(item,index) in datas" :key="index"></el-tab-pane>-->
+<!--        </el-tabs>-->
+<!--    </div>-->
+<!--   <div>-->
+<!--       <router-view/>-->
+<!--   </div>-->
 </div>
 </template>
 
